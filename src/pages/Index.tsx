@@ -6,39 +6,52 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-vintage-cream font-merriweather">
+    <div className="min-h-screen bg-scrap-cream font-merriweather relative">
+      {/* Декоративные элементы скрапбукинга */}
+      <div className="fixed top-10 left-5 w-8 h-8 bg-scrap-red rounded-full opacity-30 animate-collage-float z-10"></div>
+      <div className="fixed top-32 right-8 w-6 h-6 bg-scrap-pink rounded-full opacity-40 animate-pulse z-10"></div>
+      <div className="fixed bottom-20 left-10 text-scrap-red text-2xl opacity-20 transform -rotate-12 z-10">✨</div>
+      <div className="fixed top-1/2 right-5 text-scrap-red text-xl opacity-25 transform rotate-45 z-10">📎</div>
       {/* Hero Section - Коллажный стиль */}
       <section className="relative overflow-hidden py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <div className="relative">
-                <h1 className="text-5xl md:text-6xl font-caveat text-vintage-brown transform -rotate-2 mb-4">
-                  Репетитор по математике
+                <h1 className="text-5xl md:text-6xl font-caveat text-scrap-red transform -rotate-2 mb-4 relative">
+                  Репетитор по русскому языку
+                  <div className="absolute -top-3 -right-5 text-scrap-pink text-2xl transform rotate-12">🎀</div>
                 </h1>
-                <div className="absolute -top-4 -right-4 w-16 h-16 bg-vintage-orange rounded-full opacity-50 animate-collage-float"></div>
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-scrap-light-red rounded-full opacity-50 animate-collage-float"></div>
+                <div className="absolute -bottom-2 -left-3 text-scrap-red text-lg transform -rotate-45">→</div>
               </div>
-              <p className="text-xl text-vintage-dark leading-relaxed">
-                Помогу разобраться с математикой и полюбить точные науки. 
-                Онлайн и офлайн занятия для школьников и студентов.
+              <p className="text-xl text-scrap-dark leading-relaxed relative">
+                Помогу полюбить русский язык и литературу. Подготовлю к ЕГЭ, ОГЭ 
+                и улучшу грамотность. Онлайн и офлайн занятия.
+                <div className="absolute -right-8 -top-2 text-scrap-pink transform rotate-12">📚</div>
               </p>
               <div className="flex gap-4 pt-4">
-                <Button className="bg-vintage-orange hover:bg-vintage-brown text-white px-8 py-3 rounded-2xl font-montserrat font-semibold transform hover:scale-105 transition-transform">
+                <Button className="bg-scrap-light-red hover:bg-scrap-red text-white px-8 py-3 rounded-2xl font-montserrat font-semibold transform hover:scale-105 transition-transform relative">
                   Записаться на урок
+                  <div className="absolute -top-1 -right-1 text-scrap-pink text-sm">💫</div>
                 </Button>
-                <Button variant="outline" className="border-vintage-brown text-vintage-brown hover:bg-vintage-beige px-8 py-3 rounded-2xl font-montserrat">
+                <Button variant="outline" className="border-scrap-red text-scrap-red hover:bg-scrap-beige px-8 py-3 rounded-2xl font-montserrat">
                   Подробнее
                 </Button>
               </div>
             </div>
             <div className="relative">
               <img 
-                src="/img/da453403-b3c2-4e8d-ab2e-ec20a7c44b42.jpg" 
-                alt="Профиль репетитора"
-                className="w-full max-w-md mx-auto rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"
+                src="/img/25581050-daf1-4e60-850c-1d6af5069409.jpg" 
+                alt="Профиль репетитора русского языка"
+                className="w-full max-w-md mx-auto rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-white"
               />
-              <div className="absolute -bottom-4 -left-4 bg-vintage-gold p-4 rounded-2xl transform -rotate-12 animate-collage-float">
-                <Icon name="GraduationCap" size={32} className="text-white" />
+              {/* Обрывки бумаги */}
+              <div className="absolute -top-2 -left-2 w-8 h-6 bg-scrap-beige transform rotate-12 rounded-sm opacity-80"></div>
+              <div className="absolute -bottom-3 -right-3 w-10 h-4 bg-scrap-pink transform -rotate-6 rounded-sm opacity-70"></div>
+              <div className="absolute -bottom-4 -left-4 bg-scrap-red p-4 rounded-2xl transform -rotate-12 animate-collage-float relative">
+                <Icon name="BookOpen" size={32} className="text-white" />
+                <div className="absolute -top-1 -right-1 text-white text-xs">🎀</div>
               </div>
             </div>
           </div>
@@ -49,34 +62,38 @@ const Index = () => {
       <section className="py-20 px-4 bg-vintage-beige">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-caveat text-vintage-brown mb-4 transform -rotate-1">
+            <h2 className="text-4xl font-caveat text-scrap-red mb-4 transform -rotate-1 relative">
               Обо мне
+              <div className="absolute -top-2 -right-8 text-scrap-pink transform rotate-45">📎</div>
             </h2>
-            <div className="w-24 h-1 bg-vintage-orange mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-scrap-light-red mx-auto rounded-full"></div>
           </div>
           
-          <Card className="bg-vintage-cream border-vintage-brown border-2 shadow-lg transform hover:scale-105 transition-transform">
+          <Card className="bg-scrap-cream border-scrap-red border-2 shadow-lg transform hover:scale-105 transition-transform relative">
+            {/* Скрепка с бантиком */}
+            <div className="absolute -top-3 right-8 text-scrap-red text-2xl transform rotate-12">📎🎀</div>
             <CardContent className="p-8">
               <div className="grid md:grid-cols-3 gap-8 items-center">
                 <div className="space-y-4">
-                  <Badge className="bg-vintage-orange text-white font-caveat text-lg px-4 py-2 transform -rotate-3">
-                    10+ лет опыта
+                  <Badge className="bg-scrap-light-red text-white font-caveat text-lg px-4 py-2 transform -rotate-3 relative">
+                    12+ лет опыта
+                    <div className="absolute -top-1 -right-1 text-scrap-pink text-xs">✨</div>
                   </Badge>
-                  <Badge className="bg-vintage-brown text-white font-caveat text-lg px-4 py-2 transform rotate-2">
-                    500+ учеников
+                  <Badge className="bg-scrap-red text-white font-caveat text-lg px-4 py-2 transform rotate-2">
+                    400+ учеников
                   </Badge>
-                  <Badge className="bg-vintage-gold text-white font-caveat text-lg px-4 py-2 transform -rotate-1">
-                    МГУ, мехмат
+                  <Badge className="bg-scrap-pink text-white font-caveat text-lg px-4 py-2 transform -rotate-1">
+                    МГУ, филфак
                   </Badge>
                 </div>
                 <div className="md:col-span-2">
-                  <p className="text-vintage-dark leading-relaxed mb-4">
-                    Привет! Меня зовут Анна, и я влюблена в математику уже более 15 лет. 
-                    Закончила механико-математический факультет МГУ с красным дипломом.
+                  <p className="text-scrap-dark leading-relaxed mb-4">
+                    Привет! Меня зовут Екатерина, и я влюблена в русский язык и литературу уже более 15 лет. 
+                    Закончила филологический факультет МГУ с красным дипломом.
                   </p>
-                  <p className="text-vintage-dark leading-relaxed">
-                    За годы преподавания помогла более 500 ученикам не только понять математику, 
-                    но и полюбить её. Верю, что каждый может освоить эту прекрасную науку!
+                  <p className="text-scrap-dark leading-relaxed">
+                    За годы преподавания помогла более 400 ученикам улучшить грамотность, 
+                    подготовиться к экзаменам и полюбить родной язык. Верю, что каждый может писать красиво и грамотно!
                   </p>
                 </div>
               </div>
@@ -86,74 +103,84 @@ const Index = () => {
       </section>
 
       {/* Услуги - Карточки в коллажном стиле */}
-      <section className="py-20 px-4 bg-vintage-cream">
+      <section className="py-20 px-4 bg-scrap-cream relative">
+        {/* Декоративные стрелочки */}
+        <div className="absolute top-16 left-32 text-scrap-red text-3xl transform rotate-12 opacity-40">↗</div>
+        <div className="absolute bottom-24 right-20 text-scrap-pink text-2xl transform -rotate-45 opacity-30">↘</div>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-caveat text-vintage-brown mb-4 transform rotate-1">
+            <h2 className="text-4xl font-caveat text-scrap-red mb-4 transform rotate-1 relative">
               Мои услуги
+              <div className="absolute -top-3 -left-5 text-scrap-pink transform -rotate-12">📎</div>
             </h2>
-            <div className="w-24 h-1 bg-vintage-orange mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-scrap-light-red mx-auto rounded-full"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             {/* Онлайн занятия */}
-            <Card className="bg-vintage-beige border-vintage-orange border-3 shadow-xl transform -rotate-2 hover:rotate-0 transition-all duration-300">
+            <Card className="bg-scrap-beige border-scrap-light-red border-3 shadow-xl transform -rotate-2 hover:rotate-0 transition-all duration-300 relative">
+              {/* Обрывок бумаги */}
+              <div className="absolute -top-1 -right-2 w-6 h-4 bg-scrap-pink transform rotate-45 rounded-sm opacity-70"></div>
               <CardContent className="p-8">
                 <div className="text-center space-y-6">
                   <div className="relative">
-                    <Icon name="Monitor" size={48} className="text-vintage-orange mx-auto" />
-                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-vintage-gold rounded-full animate-pulse"></div>
+                    <Icon name="Monitor" size={48} className="text-scrap-light-red mx-auto" />
+                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-scrap-pink rounded-full animate-pulse"></div>
                   </div>
-                  <h3 className="text-2xl font-caveat text-vintage-brown">
+                  <h3 className="text-2xl font-caveat text-scrap-red relative">
                     Онлайн занятия
+                    <div className="absolute -top-2 -right-8 text-scrap-pink text-sm transform rotate-12">🌟</div>
                   </h3>
-                  <p className="text-vintage-dark">
+                  <p className="text-scrap-dark">
                     Удобные уроки из дома через Zoom. Интерактивная доска, 
-                    материалы в электронном виде, запись урока.
+                    материалы в электронном виде, разбор сочинений онлайн.
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center justify-center gap-2">
-                      <Icon name="Clock" size={16} className="text-vintage-orange" />
-                      <span className="text-sm text-vintage-dark">60 минут</span>
+                      <Icon name="Clock" size={16} className="text-scrap-light-red" />
+                      <span className="text-sm text-scrap-dark">60 минут</span>
                     </div>
                     <div className="flex items-center justify-center gap-2">
-                      <Icon name="Users" size={16} className="text-vintage-orange" />
-                      <span className="text-sm text-vintage-dark">Индивидуально</span>
+                      <Icon name="Users" size={16} className="text-scrap-light-red" />
+                      <span className="text-sm text-scrap-dark">Индивидуально</span>
                     </div>
                   </div>
-                  <Button className="bg-vintage-orange hover:bg-vintage-brown text-white w-full rounded-2xl font-montserrat">
+                  <Button className="bg-scrap-light-red hover:bg-scrap-red text-white w-full rounded-2xl font-montserrat relative">
                     Записаться онлайн
+                    <div className="absolute -top-1 -right-1 text-scrap-pink text-xs">✨</div>
                   </Button>
                 </div>
               </CardContent>
             </Card>
 
             {/* Офлайн занятия */}
-            <Card className="bg-vintage-beige border-vintage-brown border-3 shadow-xl transform rotate-2 hover:rotate-0 transition-all duration-300">
+            <Card className="bg-scrap-beige border-scrap-red border-3 shadow-xl transform rotate-2 hover:rotate-0 transition-all duration-300 relative">
+              {/* Скрепка с бантиком */}
+              <div className="absolute -top-2 left-4 text-scrap-red text-xl transform -rotate-12">📎🎀</div>
               <CardContent className="p-8">
                 <div className="text-center space-y-6">
                   <div className="relative">
-                    <Icon name="Home" size={48} className="text-vintage-brown mx-auto" />
-                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-vintage-orange rounded-full animate-pulse"></div>
+                    <Icon name="Home" size={48} className="text-scrap-red mx-auto" />
+                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-scrap-light-red rounded-full animate-pulse"></div>
                   </div>
-                  <h3 className="text-2xl font-caveat text-vintage-brown">
+                  <h3 className="text-2xl font-caveat text-scrap-red">
                     Офлайн занятия
                   </h3>
-                  <p className="text-vintage-dark">
+                  <p className="text-scrap-dark">
                     Личные встречи в уютной домашней обстановке. 
-                    Полное погружение в предмет, работа с учебниками.
+                    Полное погружение в предмет, работа с классической литературой.
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center justify-center gap-2">
-                      <Icon name="Clock" size={16} className="text-vintage-brown" />
-                      <span className="text-sm text-vintage-dark">90 минут</span>
+                      <Icon name="Clock" size={16} className="text-scrap-red" />
+                      <span className="text-sm text-scrap-dark">90 минут</span>
                     </div>
                     <div className="flex items-center justify-center gap-2">
-                      <Icon name="MapPin" size={16} className="text-vintage-brown" />
-                      <span className="text-sm text-vintage-dark">У меня дома</span>
+                      <Icon name="MapPin" size={16} className="text-scrap-red" />
+                      <span className="text-sm text-scrap-dark">У меня дома</span>
                     </div>
                   </div>
-                  <Button className="bg-vintage-brown hover:bg-vintage-orange text-white w-full rounded-2xl font-montserrat">
+                  <Button className="bg-scrap-red hover:bg-scrap-light-red text-white w-full rounded-2xl font-montserrat">
                     Записаться офлайн
                   </Button>
                 </div>
